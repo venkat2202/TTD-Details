@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTD</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            padding-bottom: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* Default: 2 columns */
+            gap: 20px;
+            width: 100%;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 20px;
+            font-size: 12px;
+        }
+
+        .box {
+            background: #161616;
+            /* dark neutral */
+            color: #ffffff;
+            border-radius: 14px;
+            padding: 20px 0px 20px 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+            border: 1px solid #262626;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        .box h2 {
+            color: #ffffff;
+        }
+
+        .box p {
+            color: #dcdcdc;
+        }
+
+        .label {
+            color: #ffffff;
+        }
+
+        .box1 {
+            border-left: 4px solid #4CAF50;
+        }
+
+        .box2 {
+            border-left: 4px solid #2196F3;
+        }
+
+        .box3 {
+            border-left: 4px solid #FF9800;
+        }
+
+        .box4 {
+            border-left: 4px solid #F44336;
+        }
+
+        .box5 {
+            border-left: 4px solid #9C27B0;
+        }
+
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                /* Stack in one column for mobile screens */
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 columns for tablets */
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .container {
+                grid-template-columns: repeat(5, 1fr);
+                /* 4 columns for larger screens */
+            }
+        }
+
+        /* Button Style */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .page-title {
+            color: #ffffff;
+            text-align: center;
+            margin: 40px 0;
+            font-size: 2.4rem;
+        }
+
+        .box h2 {
+            text-align: center;
+            color: #ffffff;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin: 0 0 16px 0;
+        }
+    </style>
+</head>
+
+<body onload="calculateAge()">
+
+    <h1 class="page-title">Tirumala Tirupati Devasthanam Lucky DIP Details</h1>
+
+    <div class="container">
+        <!-- DIP 1 -->
+        <div class="box box1">
+            <h2>DIP 1</h2>
+            <p><span class="label">Phone Number:</span><br /> 9494537575</p>
+            <p><span class="label">Email ID:</span><br /> cevvsuryanarayana@gmail.com</p>
+            <p><span class="label">City:</span><br /> HYDERABAD</p>
+            <p><span class="label">State:</span><br /> TELANGANA</p>
+            <p><span class="label">Country:</span><br /> INDIA</p>
+            <p><span class="label">Pincode:</span><br /> 500085</p>
+            <br />
+            <p><span class="label">Name:</span> <br /> C E V V SURYANARAYANA</p>
+            <p><span class="label">DOB:</span><br /> 01-12-1966</p>
+            <p><span class="label">Age:</span> <br /><span class="age" data-dob="1966-12-01"></span></p>
+            <p><span class="label">Aadhar:</span><br /> 636497653032</p>
+            <br />
+            <p><span class="label">Name:</span> <br />C K N V V DEVI</p>
+            <p><span class="label">DOB:</span><br /> 14-06-1977</p>
+            <p><span class="label">Age:</span> <br /><span class="age" data-dob="1977-06-14"></span></p>
+            <p><span class="label">Aadhar:</span><br /> 647082074739</p>
+        </div>
+
+        <!-- DIP 2 -->
+        <div class="box box2">
+            <h2>DIP 2</h2>
+            <p><span class="label">Phone Number:</span><br /> 9705299299</p>
+            <p><span class="label">Email ID:</span><br />sivasairam05@gmail.com</p>
+            <p><span class="label">City:</span><br /> RAJAMAHENDRAVARAM</p>
+            <p><span class="label">State:</span><br /> ANDHRA PRADESH</p>
+            <p><span class="label">Country:</span><br /> INDIA</p>
+            <p><span class="label">Pincode:</span><br /> 533101</p>
+            <br />
+            <p><span class="label">Name:</span> <br />VALLABHASETTI SURYA LALITHA</p>
+            <p><span class="label">DOB:</span><br /> 11-04-1979</p>
+            <p><span class="label">Age:</span> <br /><span class="age" data-dob="1979-04-11"></span></p>
+            <p><span class="label">Aadhar:</span><br /> 982237581078</p>
+            <br />
+            <p><span class="label">Name:</span> <br />VALLABHASETTI SIVA SAI RAM</p>
+            <p><span class="label">DOB:</span><br /> 05-11-2003</p>
+            <p><span class="label">Age:</span> <br /><span class="age" data-dob="2003-11-05"></span></p>
+            <p><span class="label">Aadhar:</span><br /> 363354327158</p>
+        </div>
+
+        <!-- DIP 3 -->
+        <div class="box box3">
+            <h2>DIP 3</h2>
+            <p><span class="label">Phone Number:</span><br /> 9849857655</p>
+            <p><span class="label">Email ID:</span><br />chandramoulipindi20@gmail.com</p>
+            <p><span class="label">City:</span><br /> RAJAMAHENDRAVARAM</p>
+            <p><span class="label">State:</span><br /> ANDHRA PRADESH</p>
+            <p><span class="label">Country:</span><br /> INDIA</p>
+            <p><span class="label">Pincode:</span><br /> 533101</p>
+            <br />
+            <p><span class="label">Name:</span> <br />PINDI CHANDRA MOULI</p>
+            <p><span class="label">DOB:</span><br /> 26-03-1956</p>
+            <p><span class="label">Age:</span> <br /><span class="age" data-dob="1956-03-26"></span></p>
+            <p><span class="label">Aadhar:</span><br /> 763941969394</p>
+            <br />
+            <p><span class="label">Name:</span> <br />PINDI CHANDRAVATHI</p>
+            <p><span class="label">DOB:</span><br /> 13-06-1967</p>
+            <p><span class="label">Age:</span> <br /><span class="age" data-dob="1967-06-13"></span></p>
+            <p><span class="label">Aadhar:</span><br /> 688937983311</p>
+        </div>
+
+        <!-- DIP 4 -->
+        <div class="box box5">
+            <h2>DIP 4</h2>
+            <p><span class="label">Phone Number:</span><br /> 9494071515</p>
+            <p><span class="label">Email ID:</span><br />venkatnaveen890@gmail.com</p>
+            <p><span class="label">City:</span><br /> HYDERABAD</p>
+            <p><span class="label">State:</span><br /> TELANGANA</p>
+            <p><span class="label">Country:</span><br /> INDIA</p>
+            <p><span class="label">Pincode:</span><br /> 500085</p>
+            <br />
+            <p><span class="label">Name:</span><br /> CHINTA VENKATA NAVEEN</p>
+            <p><span class="label">DOB:</span><br /> 22-02-2002</p>
+            <p><span class="label">Age:</span> <br /><span class="age" data-dob="2002-02-22"></span></p>
+            <p><span class="label">Aadhar:</span><br /> 635743404211</p>
+        </div>
+
+
+        <!-- DIP 5 -->
+        <div class="box box4">
+            <h2>DIP 5</h2>
+            <p><span class="label">Phone Number:</span><br /> 9396871532</p>
+            <p><span class="label">Email ID:</span><br />pindivenkat@yahoo.co.in</p>
+            <p><span class="label">City:</span><br /> HYDERABAD</p>
+            <p><span class="label">State:</span><br /> TELANGANA</p>
+            <p><span class="label">Country:</span><br /> INDIA</p>
+            <p><span class="label">Pincode:</span><br /> 500050</p>
+            <br />
+            <p><span class="label">Name:</span><br /> PINDI VENKATA RAMANA</p>
+            <p><span class="label">DOB:</span><br /> 10-06-1982</p>
+            <p><span class="label">Age:</span> <br /><span class="age" data-dob="1982-06-10"></span></p>
+            <p><span class="label">Aadhar:</span><br /> 560327073305</p>
+            <br />
+            <p><span class="label">Name:</span> <br />NANDIKOLLA DURGA SIVA KUMARI</p>
+            <p><span class="label">DOB:</span><br /> 03-06-1986</p>
+            <p><span class="label">Age:</span> <br /><span class="age" data-dob="1986-06-03"></span></p>
+            <p><span class="label">Aadhar:</span><br /> 909366395826</p>
+        </div>
+
+    </div>
+
+    <script>
+        function calculateAge() {
+            const ageElements = document.querySelectorAll('.age');
+            const currentDate = new Date();
+            const currentYear = currentDate.getFullYear();
+            const currentMonth = currentDate.getMonth();
+            const currentDay = currentDate.getDate();
+
+            ageElements.forEach(function (ageElement) {
+                const dob = ageElement.getAttribute('data-dob');
+                const birthDate = new Date(dob);
+                const birthYear = birthDate.getFullYear();
+                const birthMonth = birthDate.getMonth();
+                const birthDay = birthDate.getDate();
+
+                let age = currentYear - birthYear;
+
+                if (currentMonth < birthMonth || (currentMonth === birthMonth && currentDay < birthDay)) {
+                    age--;
+                }
+
+                ageElement.textContent = age;
+            });
+        }
+    </script>
+</body>
+
+</html>
